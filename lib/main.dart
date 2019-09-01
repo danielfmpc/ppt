@@ -1,27 +1,11 @@
 import 'package:flutter/material.dart';
+import 'jogo.dart';
 
 void main(){
 	runApp(
 		MaterialApp(
-			home: Home(),
+			home: Jogo(),
 			debugShowCheckedModeBanner: false,
 		),
 	);
-}
-
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-	return Scaffold(
-		appBar: AppBar(
-			title: Text("Pedra, Papel e Tesoura"),
-			backgroundColor: Colors.blue,
-		),
-	);
-  }
 }
